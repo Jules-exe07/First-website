@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My food</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    background: rgb(235, 230, 230);
+    font-family: "Lucida Console", "Courier New", monospace;
+}  
+nav {
+    background: #000000;
+    width: 100%;
+    overflow: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    float: left;
+}
+nav a {
+    width: 120px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #000a0a;
+    font-size: 17px;
+    color:rgb(235, 230, 230);
+    Padding: 20px, 10px;
+    
+}
+nav a:hover {
+    background: lightgrey;
+    color:black;
+    }
+.container {
+    max-width: 1200px;
+    margin: auto; 
+    background: #f2f2f2;
+    overflow: auto;
+}
+.gallery {
+    margin: none;
+    border: 0px;
+    float: left;
+    width: 390px;
+}
+.gallery img {
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+.desc {
+    padding: 15px;
+    text-align: left;
+}   
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://steviespizza.com/wp-content/uploads/2017/12/pizza-header.jpg"); 
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+
+.pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+.fa-twitter {
+  color: rgb(12, 203, 236);
+}
+.fa-instagram {
+  color: rgb(228, 8, 173);
+}
+</style>
+</head>
+
+<body>
+    
+<div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Thin Crust Pizza</h1>
+    </div>
+  </div>
+<nav> 
+    <ul>
+        <li>
+          <ul>
+            <li><a href="#">My Food</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Join us</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<div class="container"> 
+    <div class="gallery">
+      <img src="https://www.pequeocio.com/wp-content/uploads/elementor/thumbs/pizza-casera-receta-o6wnj39my3l9rare7jd0zlpuz2j51jok6e02nqgrik.jpg" alt="Pizza" height="20">
+      <div class="desc">The best Pizza in town!</div>
+    </div>
+        <div class="gallery">
+          <img src="https://images.pitboss-grills.com/catalog/recipes/1200px/Reverse-Seared-NY-Steak.jpg" alt="Steak">
+          <div class="desc">The juciest steak!</div>
+        </div>
+        <div class="gallery">
+            <img src="https://assets.tmecosys.com/image/upload/t_web600x528/img/recipe/vimdb/270679.jpg" alt="Chicken">
+            <div class="desc">Want to taste some to S. Korea? <br> try this Korean Friend Chicken</div>
+          </div>
+          <div class="gallery">
+            <img src="https://res-5.cloudinary.com/sharecare/image/upload/c_fill,dpr_1,f_auto,h_340,w_600/v1484616848/articles/oven-toasted-salmon-recipe" alt="Chicken">
+            <div class="desc">Salmon for the your health <br> and your skin!</div>
+          </div>
+          <div class="gallery">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/01/95/8d/ze-colmeia.jpg" alt="Burger">
+            <div class="desc">The best burgers in Medellin!</div>
+          </div>
+          <div class="gallery">
+            <img src="https://i1.wp.com/parsedeveloperday.com/wp-content/uploads/2019/10/Delicious-Sushi-Header.jpeg?w=1200&ssl=1" alt="Sushi">
+            <div class="desc">We're a sushi machine!</div>
+          </div>
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div> <br>
+
+          <hr id="about">
+
+          <!-- About Section -->
+          <div class="w3-container w3-padding-32 w3-center">  
+            <h3>About our flavor!</h3><br>
+            <img src="https://static01.nyt.com/images/2020/08/05/dining/06chefs-ES-03/03chefs4-jumbo.jpg?quality=90&auto=webp" alt="Team of chefs" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+            <div class="w3-padding-32">
+              <h6><i>With Passion For Real, Good Food</i></h6>
+              <p>Exploring the universe of unknownment. We have a heart of love and an interest for making food a different experience for everyone. We try to connect though taste.</p>
+            </div>
+          </div>
+          <hr>
+
+          <footer> <br>
+ 
+            <h5 id="Subscribe">Subscribe</h5>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+    
+            <form onsubmit="alert('Subscribed!')">
+                <input type="text" placeholder="Enter Email address"> <button>Submit</button> 
+            </form>
+            <div>&copy; Doña Marta en el resta</div>
+        </footer>
+        
+</body>
+</html>
